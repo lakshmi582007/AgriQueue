@@ -40,6 +40,7 @@ function FarmerRegistration() {
       <header className="registration-header">
 
         <div className="logo-section">
+
           <div className="logo-icon">
             🌾
           </div>
@@ -48,6 +49,7 @@ function FarmerRegistration() {
             <h1>AgriQueue</h1>
             <p>Smart Farmer Procurement</p>
           </div>
+
         </div>
 
         <button className="language-button">
@@ -56,8 +58,10 @@ function FarmerRegistration() {
 
       </header>
 
+
       {/* MAIN */}
       <main className="registration-container">
+
 
         {/* PROGRESS */}
         <div className="progress-section">
@@ -71,20 +75,15 @@ function FarmerRegistration() {
 
           <div className="progress-step">
             <span>2</span>
-            <p>Crop Details</p>
-          </div>
-
-          <div className="progress-line"></div>
-
-          <div className="progress-step">
-            <span>3</span>
             <p>Complete</p>
           </div>
 
         </div>
 
-        {/* CARD */}
+
+        {/* REGISTRATION CARD */}
         <div className="registration-card">
+
 
           {/* TITLE */}
           <div className="card-heading">
@@ -104,16 +103,23 @@ function FarmerRegistration() {
 
           </div>
 
+
           {/* FORM */}
           <form onSubmit={handleSubmit}>
 
+
             {/* PERSONAL DETAILS */}
             <div className="section-title">
+
               <span>👤</span>
+
               Personal Details
+
             </div>
 
+
             <div className="form-grid">
+
 
               {/* NAME */}
               <div className="form-group full-width">
@@ -132,6 +138,7 @@ function FarmerRegistration() {
                 />
 
               </div>
+
 
               {/* AADHAAR */}
               <div className="form-group">
@@ -158,6 +165,7 @@ function FarmerRegistration() {
 
               </div>
 
+
               {/* DISTRICT */}
               <div className="form-group">
 
@@ -176,6 +184,7 @@ function FarmerRegistration() {
 
               </div>
 
+
               {/* VILLAGE */}
               <div className="form-group">
 
@@ -193,6 +202,7 @@ function FarmerRegistration() {
                 />
 
               </div>
+
 
               {/* KHASRA */}
               <div className="form-group">
@@ -214,15 +224,21 @@ function FarmerRegistration() {
 
             </div>
 
+
             {/* CROP DETAILS */}
             <div className="section-title crop-title">
+
               <span>🌱</span>
+
               Crop Details
+
             </div>
+
 
             <div className="form-grid">
 
-              {/* CROP */}
+
+              {/* CROP TYPE */}
               <div className="form-group">
 
                 <label>
@@ -276,6 +292,7 @@ function FarmerRegistration() {
 
               </div>
 
+
               {/* QUANTITY */}
               <div className="form-group">
 
@@ -295,6 +312,7 @@ function FarmerRegistration() {
 
               </div>
 
+
               {/* HARVEST DATE */}
               <div className="form-group">
 
@@ -313,6 +331,7 @@ function FarmerRegistration() {
               </div>
 
             </div>
+
 
             {/* INFORMATION */}
             <div className="info-box">
@@ -338,16 +357,21 @@ function FarmerRegistration() {
 
             </div>
 
-            {/* SUBMIT */}
+
+            {/* SUBMIT BUTTON */}
             <button
               type="submit"
               className="submit-button"
             >
+
               Register Farmer
+
               <span>→</span>
+
             </button>
 
           </form>
+
 
           {/* SUCCESS MESSAGE */}
           {registrationNumber && (
@@ -366,6 +390,7 @@ function FarmerRegistration() {
                 Your farmer registration has been completed.
               </p>
 
+
               <div className="registration-number">
 
                 <span>
@@ -377,6 +402,7 @@ function FarmerRegistration() {
                 </strong>
 
               </div>
+
 
               <p className="success-note">
                 Please keep this registration number
@@ -390,6 +416,7 @@ function FarmerRegistration() {
         </div>
 
       </main>
+
 
       {/* FOOTER */}
       <footer>
