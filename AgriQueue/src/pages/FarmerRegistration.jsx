@@ -383,15 +383,6 @@ function FarmerRegistration() {
                 for future reference.
               </p>
 
-              <button
-                className="continue-button"
-                onClick={() => {
-                  alert("Crop Details page will be connected later.");
-                }}
-              >
-                Continue to Crop Details →
-              </button>
-
             </div>
 
           )}
