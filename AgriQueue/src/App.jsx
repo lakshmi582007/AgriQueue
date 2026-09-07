@@ -1,4 +1,5 @@
 import FarmerRegistration from "./pages/FarmerRegistration";
+import Payment from "./pages/Payment";
 import "./App.css";
 
 function App() {
@@ -6,6 +7,10 @@ function App() {
 
   if (currentPath === "/farmer-registration") {
     return <FarmerRegistration />;
+  }
+
+  if (currentPath === "/payment") {
+    return <Payment />;
   }
 
   return (
@@ -24,8 +29,17 @@ function App() {
       >
         Farmer Registration →
       </a>
+
+      <br />
+
+      <a
+        href="/payment"
+        className="registration-btn"
+      >
+        Payment Status →
+      </a>
     </div>
   );
 }
 
-export default App;
+export default App;   
