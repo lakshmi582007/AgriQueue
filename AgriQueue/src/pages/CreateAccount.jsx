@@ -1,0 +1,72 @@
+import React from "react";
+import "./CreateAccount.css";
+
+function CreateAccount() {
+  return (
+    <div className="create-account-page">
+      <div className="create-account-card">
+
+        <h1>Create Account</h1>
+
+        <p className="subtitle">
+          Create your AgriQueue farmer account
+        </p>
+
+        <form>
+
+          <div className="form-group">
+            <label>Full Name</label>
+            <input
+              type="text"
+              placeholder="Enter your full name"
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Mobile Number</label>
+            <input
+              type="tel"
+              placeholder="Enter your mobile number"
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Email Address</label>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              placeholder="Create a password"
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Confirm Password</label>
+            <input
+              type="password"
+              placeholder="Confirm your password"
+            />
+          </div>
+
+          <button type="submit">
+            Create Account
+          </button>
+
+        </form>
+
+        <p className="login-text">
+          Already have an account? <span>Login</span>
+        </p>
+
+      </div>
+    </div>
+  );
+}
+
+export default CreateAccount;

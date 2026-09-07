@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.create-account-page {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Main Card */
+
+.create-account-card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 8px 30px rgba(0, 80, 40, 0.12);
+  border: 1px solid #e8f3e8;
+}
+
+/* Heading */
+
+.create-account-card h1 {
+  color: #14532d;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  margin: 8px 0 28px;
+}
+
+/* Form */
+
+.create-account-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  color: #14532d;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border: 1px solid #cde5d1;
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.12);
+}
+
+/* Create Account Button */
+
+.create-account-card form > button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 30px;
+  background: #14532d;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.create-account-card form > button:hover {
+  background: #2e7d32;
+  transform: translateY(-2px);
+}
+
+/* Account Type */
+
+.role-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.role-section h3 {
+  color: #14532d;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.role-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.role-card {
+  padding: 18px 10px;
+  background: #f0fdf4;
+  border: 1px solid #cde5d1;
+  border-radius: 16px;
+  color: #14532d;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.role-card:hover {
+  background: #dcfce7;
+  border-color: #4caf50;
+  transform: translateY(-3px);
+}
+
+.role-icon {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+/* Login Text */
+
+.login-text {
+  text-align: center;
+  color: #6b7280;
+  font-size: 13px;
+  margin-top: 22px;
+}
+
+.login-text span {
+  color: #2e7d32;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+  .create-account-page {
+    padding: 20px;
+  }
+
+  .create-account-card {
+    padding: 28px 22px;
+  }
+
+  .create-account-card h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .role-options {
+    grid-template-columns: 1fr;
+  }
+}
