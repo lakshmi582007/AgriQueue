@@ -1,7 +1,8 @@
-import Home from "./pages/Home";
+import ProcurementCentre from "./pages/ProcurementCentre";
 
 function App() {
-  return <Home />;
+  return <ProcurementCentre />;
 }
+
 
 export default App;
